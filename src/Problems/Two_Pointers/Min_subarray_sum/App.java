@@ -1,9 +1,9 @@
-package Problems.Min_subarray_sum;
+package Problems.Two_Pointers.Min_subarray_sum;
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("RUNNING");
-        int[] myNum = {2,3,1,2,4,3};
+        int[] myNum = {1,2,3,4,5};
         Solution solution = new Solution();
-        System.out.println("SOLUTION:" + solution.minSubArrayLen(7, myNum));
+        System.out.println("SOLUTION:" + solution.minSubArrayLen(11, myNum));
     }
 }
