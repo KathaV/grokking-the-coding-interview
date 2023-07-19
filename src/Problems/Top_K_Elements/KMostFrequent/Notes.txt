@@ -1,0 +1,17 @@
+Naive solution:
+
+# Solution 1 (Naive) -- Hashmap:
+- insert to hashmap (key: number, value: frequency).
+- sort hashmap by frequency
+- retrieve top k
+
+## Time complexity
+- insertion: O(1). Iterating through whole array? O(n)
+- sort hashmap: O(klogk), where k is the number of keys/distinct elements in the original array
+- Retrieve top k: O(1)
+- TOTAL: O(n) + (k log k) = O(n) where there are few distinct elements, O(k log k), where there are 
+- possible O(n^2) worst case, where there are no repeated elements (sorting through O(n) elements where pivot is always not optimal)
+
+# Solution 2 -- Max:
+- insertion: O(1). Array Loop: O(n)
+- insertion sort: O(n). 

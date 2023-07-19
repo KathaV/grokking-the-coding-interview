@@ -1,30 +1,15 @@
-package Problems.Two_Pointers.Min_subarray_sum;
+package Problems.Sliding_Window.Repeated_DNA_Sequences;
+import java.util.*;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+/*** Given a string s that represents a DNA sequence, and a number k, 
+ * return all the contiguous sequences (substrings) of length k that occur more than once in the string. 
+ * The order of the returned subsequences does not matter. 
+ * If no repeated subsequence is found, the function should return an empty set. */
 
-public class Solution {
-    public int minSubArrayLen(int target, int[] nums) {
-        int start = 0, end = 0, sum = 0, tmp = 0, min = Integer.MAX_VALUE;
-        System.out.println("RUNNING 2");
-
-        // add til you reach the end,
-        while (end < nums.length){
-            System.out.println(start +", "+end+", "+tmp);
-
-            // from the checkpoint of last added num to the end, add all numbers
-            sum += nums[end++];
-            
-            System.out.println(sum);
-            // if the sum is too small, move end pointer, and move checkpoint to end
-            while (sum>=target){
-                min = end-start;
-                sum -= nums[start++];
-
-                System.out.println(sum+", "+min);
-                
-            }
-
-        }
-        return min==Integer.MAX_VALUE? 0:min;
-    }
+ public class Solution {
+    public List<String> findRepeatedSequences(String s, int k) {
+        ArrayList<String> output = new ArrayList<String>();
+        
+        return output;
+     }
 }

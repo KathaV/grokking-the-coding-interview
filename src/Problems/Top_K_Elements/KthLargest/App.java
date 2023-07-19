@@ -1,9 +1,10 @@
-package Problems.Two_Pointers.Min_subarray_sum;
+package Problems.Top_K_Elements.KthLargest;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("RUNNING");
-        int[] myNum = {1,2,3,4,5};
         Solution solution = new Solution();
-        System.out.println("SOLUTION:" + solution.minSubArrayLen(11, myNum));
+        int[] nums = {3,2,3,1,2,4,5,5,6};
+        System.out.println("SOLUTION:" + solution.findKthLargest(nums, 4));
     }
 }

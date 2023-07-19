@@ -1,4 +1,5 @@
-package Problems.Two_Pointers.Min_subarray_sum;
+package Problems.Sliding_Window.Min_subarray_sum;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("RUNNING");

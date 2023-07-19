@@ -1,4 +1,4 @@
-package Problems.Two_Pointers.Min_subarray_sum;
+package Problems.Sliding_Window.Min_subarray_sum;
 
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
@@ -17,7 +17,7 @@ public class Solution {
             System.out.println(sum);
             // if the sum is too small, move end pointer, and move checkpoint to end
             while (sum>=target){
-                min = end-start;
+                min = Math.min(min, end-start);
                 sum -= nums[start++];
 
                 System.out.println(sum+", "+min);
